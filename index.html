@@ -283,6 +283,90 @@
     height:100%; background:var(--gold); width:0%; transition:width 0.5s linear;
     border-radius:2px;
   }
+
+  /* ── MOBILE RESPONSIVE ── */
+  @media (max-width: 767px) {
+    .top-bar {
+      padding: 1rem 1rem;
+    }
+    .top-bar::before {
+      border-width: 50px 50px 0 0;
+    }
+    .top-bar::after {
+      border-width: 50px 0 0 50px;
+    }
+    .logo-img {
+      height: 100px;
+    }
+    .hero {
+      padding: 2rem 1.5rem 0;
+    }
+    .hero h1 {
+      font-size: clamp(1.4rem, 6vw, 2.2rem);
+    }
+    .hero .sub {
+      font-size: clamp(0.9rem, 4vw, 1.4rem);
+      margin-bottom: 1.5rem;
+    }
+    .hero-car {
+      width: 95%;
+    }
+    .content-area::before {
+      width: 100%;
+      opacity: 0.3;
+    }
+    .cards-wrap {
+      padding: 1.5rem 1.2rem 2.5rem;
+    }
+    .exp-card {
+      padding: 1.5rem 0;
+    }
+    .exp-title {
+      font-size: clamp(1.1rem, 4vw, 1.5rem);
+    }
+    .exp-desc {
+      font-size: 0.85rem;
+    }
+    .audio-player {
+      bottom: 1rem;
+      right: 1rem;
+      padding: 0.8rem 1rem 0.6rem;
+      min-width: 120px;
+    }
+    .bottom-bar::before {
+      border-width: 0 0 35px 35px;
+    }
+    .bottom-bar::after {
+      border-width: 0 35px 35px 0;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .top-bar::before {
+      border-width: 35px 35px 0 0;
+    }
+    .top-bar::after {
+      border-width: 35px 0 0 35px;
+    }
+    .logo-img {
+      height: 70px;
+    }
+    .hero {
+      padding: 1.5rem 1rem 0;
+    }
+    .cards-wrap {
+      padding: 1rem 0.8rem 2rem;
+    }
+    .audio-player {
+      bottom: 0.5rem;
+      right: 0.5rem;
+      min-width: 100px;
+      padding: 0.6rem 0.8rem 0.5rem;
+    }
+    .audio-label {
+      font-size: 0.45rem;
+    }
+  }
 </style>
 </head>
 <body>
